@@ -15,21 +15,8 @@
           size: A4;
           margin: 0;
         }
-        
-        /* Page breaks after specific sections */
         .page-break-after {
           page-break-after: always;
-        }
-        
-        /* Ensure background colors and images are printed */
-        body {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-
-        /* Hide signature section when printing */
-        .print-hidden {
-          display: none;
         }
       }
     </style>
@@ -55,7 +42,7 @@
   </head>
 
   <body class="text-base">
-    <div class="mx-auto max-w-screen-xl p-6 sm:p-8 md:p-[50px]">
+    <div class="mx-auto max-w-screen-xl px-8 py-0">
       <header class="mt-4">
         <div class="w-full">
           <div class="flex flex-col md:flex-row">
@@ -198,8 +185,6 @@
                 </div>
               </div>
             </article>
-
-            <div class="page-break-after"></div>
             
             <article class="mb-8">
               <div class="flex flex-col md:flex-row">
@@ -230,6 +215,8 @@
               </div>
             </article>
                         
+            <div class="page-break-after"></div>
+
             <article class="mb-8">
               <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/4 mb-3 md:mb-0">
@@ -260,8 +247,6 @@
             </article>
           </div>
         </section>
-        
-        <div class="page-break-after"></div>
         
         <section class="mt-8">
           <div class="w-full">
@@ -411,7 +396,7 @@
         
       </main>
       
-      <div class="mt-10 print-hidden">
+      <div class="mt-10">
         <div class="w-full">
           <div class="my-8">
             <div class="md:w-1/2">
