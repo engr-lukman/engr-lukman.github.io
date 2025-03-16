@@ -3,424 +3,785 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Mohammad Lukman Hussain - Staff Software Engineer with 13+ years of experience in JavaScript, React.js, Next.js, Vue.js, Node.js, Express.js, Nest.js, and full-stack development.">
-    <meta name="keywords" content="Staff Software Engineer, Full Stack Developer, JavaScript Developer, React.js, Next.js, Vue.js, Quasar, Node.js, Express.js, Nest.js, MongoDB, MERN Stack, Frontend Engineer, Backend Engineer">
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Mohammad Lukman Hussain - Staff Software Engineer with 13+ years of expertise in React.js, Next.js, Vue.js, and Node.js. Specialized in frontend architecture, TypeScript, and cloud solutions."
+    />
+    <meta
+      name="keywords"
+      content="Staff Software Engineer, React.js Developer, Vue.js Expert, Next.js Developer, Frontend Architecture, TypeScript Developer, MongoDB, PostgreSQL, Docker, AWS, Frontend Engineer, Full Stack Developer, Bangladesh Developer, Node.js Developer"
+    />
+    <meta name="author" content="Mohammad Lukman Hussain" />
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta
+      property="og:title"
+      content="Mohammad Lukman Hussain - Staff Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="13+ years experienced software engineer specializing in React.js, Next.js, Vue.js, and Node.js with enterprise-level architecture expertise."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://engr-lukman.github.io/" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Mohammad Lukman Hussain - Staff Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="13+ years experienced software engineer specializing in React.js, Next.js, Vue.js, and Node.js with enterprise-level architecture expertise."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Mohammad Lukman Hussain | Staff Software Engineer | Resume</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            width: {
+              ats: "1280px",
+            },
+            maxWidth: {
+              ats: "1280px",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       @media print {
         @page {
           size: A4;
           margin: 0;
         }
+
         .page-break-after {
           page-break-after: always;
         }
       }
     </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#503AF2',
-              'primary-light': '#7A68F5',
-              secondary: '#3866FF',
-              'secondary-light': '#6A8FFF',
-            },
-            fontSize: {
-              'base': '16px',    
-              'job': '18px',    
-              'heading': '20px', 
-            }
-          }
-        }
-      }
-    </script>
+    <title>Mohammad Lukman Hussain - Software Engineer</title>
   </head>
 
-  <body class="text-base">
-    <div class="mx-auto max-w-screen-xl px-8 py-0">
-      <header class="mt-4">
-        <div class="w-full">
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/4 mb-4 md:mb-0 flex justify-center md:justify-start">
-              <img src="./photo.jpg" class="w-40 h-40 border-2 border-[#c1c1c1] rounded-lg shadow-sm" alt="Mohammad Lukman Hussain profile photo" />
-            </div>
-            <div class="md:w-3/4">
-              <h1 class="text-heading font-bold">MOHAMMAD LUKMAN HUSSAIN</h1>
-              <h2 class="text-job text-gray-600 mb-3">Staff Software Engineer | Full Stack Developer</h2>
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-3 md:mb-0">
-                  <ul class="space-y-2">
-                    <li class="flex items-center">
-                      <img src="icons/mail-outline.svg" class="h-4 w-4 mr-2" alt="Email" />
-                      <a href="mailto:engr.lukman@gmail.com" class="hover:text-blue-600">engr.lukman@gmail.com</a>
-                    </li>
-                    <li class="flex items-center">
-                      <img src="icons/phone-portrait-outline.svg" class="h-4 w-4 mr-2" alt="Phone" />
-                      <a href="tel:+8801713811353" class="hover:text-blue-600">+880 1713 811 353</a>
-                    </li>
-                    <li class="flex items-center">
-                      <img src="icons/location-outline.svg" class="h-4 w-4 mr-2" alt="Location" />
-                      Dhaka, Bangladesh
-                    </li>
-                  </ul>
-                </div>
-                <div class="md:w-1/2">
-                  <ul class="space-y-2">
-                    <li class="flex items-center">
-                      <img src="icons/logo-linkedin.svg" class="h-4 w-4 mr-2" alt="LinkedIn" />
-                      <a href="https://www.linkedin.com/in/engr-lukman" target="_blank" rel="noopener" class="hover:text-blue-600">linkedin.com/in/engr-lukman</a>
-                    </li>
-                    <li class="flex items-center">
-                      <img src="icons/github-svgrepo-com.svg" class="h-4 w-4 mr-2" alt="GitHub" />
-                      <a href="https://github.com/engr-lukman" target="_blank" rel="noopener" class="hover:text-blue-600">github.com/engr-lukman</a>
-                    </li>
-                    <li class="flex items-center">
-                      <img src="icons/hashnode-icon-svgrepo-com.svg" class="h-4 w-4 mr-2" alt="Hashnode" />
-                      <a href="https://lukman.hashnode.dev" target="_blank" rel="noopener" class="hover:text-blue-600">lukman.hashnode.dev</a>
-                    </li>
-                  </ul>
-                </div>
+  <body class="bg-white font-sans">
+    <div class="container mx-auto px-8 py-6 w-full max-w-ats">
+      <!-- HEADER SECTION -->
+      <header class="mb-6 pb-6 border-b-2 border-gray-300">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div>
+            <h1 class="text-3xl font-bold text-gray-800">
+              MOHAMMAD LUKMAN HUSSAIN
+            </h1>
+            <p class="text-xl text-gray-600 mt-1">Staff Software Engineer</p>
+
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-y-1 gap-x-8">
+              <div class="flex items-center">
+                <img
+                  src="icons/mail-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Email"
+                />
+                <a href="mailto:engr.lukman@gmail.com" class="text-blue-700"
+                  >engr.lukman@gmail.com</a
+                >
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="icons/phone-portrait-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Phone"
+                />
+                <span>+880 1713 811 353</span>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="icons/location-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Location"
+                />
+                <span>Dhaka, Bangladesh</span>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="icons/logo-linkedin.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="LinkedIn"
+                />
+                <a
+                  href="https://www.linkedin.com/in/engr-lukman"
+                  class="text-blue-700"
+                  target="_blank"
+                  >linkedin.com/in/engr-lukman</a
+                >
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="icons/github-svgrepo-com.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="GitHub"
+                />
+                <a
+                  href="https://github.com/engr-lukman"
+                  class="text-blue-700"
+                  target="_blank"
+                  >github.com/engr-lukman</a
+                >
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="icons/hashnode-icon-svgrepo-com.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Blog"
+                />
+                <a
+                  href="https://lukman.hashnode.dev"
+                  class="text-blue-700"
+                  target="_blank"
+                  >lukman.hashnode.dev</a
+                >
               </div>
             </div>
+          </div>
+          <div class="mt-6 md:mt-0">
+            <img
+              src="./photo.jpg"
+              class="h-32 w-32 rounded border-2 border-gray-300"
+              alt="Mohammad Lukman Hussain"
+            />
           </div>
         </div>
       </header>
-      
-      <main>
-        <section class="mt-8">
-          <div class="w-full">
-            <h2 id="professional-summary" class="text-heading font-semibold border-b-2 border-primary-light pb-1 mb-4">PROFESSIONAL SUMMARY</h2>
-            <p class="mb-4">
-              Staff Software Engineer with 13+ years of experience building scalable web applications and leading development teams. 
-              Specialized in JavaScript technologies with expertise in React.js, Next.js, Vue.js, Node.js, and AWS cloud services. 
-              Proven record of architecting frontend solutions, implementing efficient backend systems, and managing DevOps workflows with Docker.
-              Strong technical leadership with experience mentoring teams and maintaining code quality standards.
+
+      <!-- PROFESSIONAL SUMMARY -->
+      <section class="mb-6">
+        <h2
+          class="text-xl font-bold text-white bg-gray-700 px-4 py-1 mb-3 tracking-wider"
+        >
+          PROFESSIONAL SUMMARY
+        </h2>
+        <p class="text-gray-800 leading-relaxed">
+          Staff Software Engineer with 13+ years of expertise in enterprise
+          application development using
+          <span class="font-semibold">React.js</span>,
+          <span class="font-semibold">Next.js</span>,
+          <span class="font-semibold">Vue.js</span>, and
+          <span class="font-semibold">Node.js</span>. Proficient in
+          <span class="font-medium">TypeScript</span>,
+          <span class="font-medium">Redux</span>,
+          <span class="font-medium">Pinia</span>, and
+          <span class="font-medium">Docker</span> for scalable frontend
+          architectures. Experienced in team leadership, CI/CD implementation,
+          and cloud solution architecture with
+          <span class="font-medium">MongoDB</span>,
+          <span class="font-medium">PostgreSQL</span>, and
+          <span class="font-medium">AWS</span>. Expert in performance
+          optimization and third-party API integration.
+        </p>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section class="mb-6">
+        <h2
+          class="text-xl font-bold text-white bg-gray-700 px-4 py-1 mb-3 tracking-wider"
+        >
+          TECHNICAL SKILLS
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Frontend Development
+            </h3>
+            <p class="text-gray-800">
+              React.js, Next.js, Vue.js, Nuxt.js, Quasar, TypeScript,
+              JavaScript, jQuery, Redux, Pinia, RTK Query, React Query, D3.js
             </p>
           </div>
-        </section>
-
-        <section class="mt-8">
-          <div class="w-full">
-            <h2 id="experience" class="text-heading font-semibold border-b-2 border-primary-light pb-1 mb-4">PROFESSIONAL EXPERIENCE</h2>
-            <article class="mb-8">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Staff Software Engineer</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <h4 class="text-job font-medium">Vivasoft Limited (bKash Team)</h4>
-                  <p class="text-gray-600 mb-2">March 2022 - Present</p>
-                  <ul class="list-disc pl-5 space-y-3">
-                    <li>
-                      Led technical design and implementation of multiple full-stack web applications using modern JavaScript frameworks
-                    </li>
-                    <li>
-                      Designed scalable frontend architectures and implemented DevOps workflows with Docker
-                    </li>
-                    <li>
-                      Mentored junior developers and maintained high code quality through regular code reviews
-                    </li>
-                    <li>
-                      <strong>Technologies:</strong> JavaScript, TypeScript, React.js, Next.js, Vue.js, Node.js, Express.js, Nest.js, MongoDB, AWS, Docker
-                    </li>
-                    <li>
-                      <strong>Key Projects:</strong>
-                      <ul class="list-none pl-0 space-y-4 mt-3">
-                        <li class="border-l-4 border-[#d4d4d8] pl-4 py-1">
-                          <div class="font-semibold">bKash Merchant Portal</div>
-                          <p class="mt-1"><strong>Role:</strong> Lead Developer</p>
-                          <p class="mt-1">Developed a comprehensive merchant management system with financial reporting, settlement processing, and multi-tiered merchant onboarding. Implemented enterprise wallet management for large businesses and B2B payment solutions.</p>
-                          <p class="mt-1 italic text-gray-700"><strong>Technologies:</strong> Vue.js, Quasar, Tailwind CSS, Node.js, Nest.js, PostgreSQL, DynamoDB</p>
-                        </li>
-
-                        <div class="page-break-after"></div>
-
-                        <li class="border-l-4 border-[#d4d4d8] pl-4 py-1">
-                          <div class="font-semibold">HINK Media Share Platform</div>
-                          <p class="mt-1"><strong>Role:</strong> Lead Developer</p>
-                          <p class="mt-1">Built a media sharing platform with AWS S3 integration for high-resolution content, geolocation-based discovery, and comprehensive permission management.</p>
-                          <p class="mt-1 italic text-gray-700"><strong>Technologies:</strong> React.js, Next.js, Node.js, MongoDB, MySQL, AWS S3</p>
-                        </li>
-                        
-                        <li class="border-l-4 border-[#d4d4d8] pl-4 py-1">
-                          <div class="font-semibold">Intelligent Applicant Tracking System</div>
-                          <p class="mt-1"><strong>Role:</strong> Technical Lead</p>
-                          <p class="mt-1">Created a recruitment automation platform with multi-tenant job portal, AI-powered application filtering, and automated candidate prioritization, reducing hiring process time by 40%.</p>
-                          <p class="mt-1 italic text-gray-700"><strong>Technologies:</strong> React.js, Next.js, FastAPI, PostgreSQL, MongoDB</p>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-                        
-            <article class="mb-8">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Senior Software Engineer</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <h4 class="text-job font-medium">Technobd Web Solutions (Pvt.) Ltd.</h4>
-                  <p class="text-gray-600 mb-2">November 2018 - January 2022</p>
-                  <ul class="list-disc pl-5 space-y-2">
-                    <li>
-                      Designed role-based authentication systems and secure admin panels for multiple web applications
-                    </li>
-                    <li>
-                      Implemented real-time communication using React.js and WebSockets for live chat functionality
-                    </li>
-                    <li>
-                      Integrated third-party APIs including Twilio for messaging and TaxJar for automated tax reporting
-                    </li>
-                    <li>
-                      <strong>Technologies:</strong> React.js, Node.js, PHP, MongoDB, MySQL, RESTful APIs
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            
-            <article class="mb-8">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Senior Programmer</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <h4 class="text-job font-medium">WAN IT Ltd.</h4>
-                  <p class="text-gray-600 mb-2">December 2015 - July 2018</p>
-                  <ul class="list-disc pl-5 space-y-2">
-                    <li>
-                      Developed comprehensive HRM system with employee management, leave tracking, and performance reviews
-                    </li>
-                    <li>
-                      Built automated payroll system with tax calculations and direct deposit integration
-                    </li>
-                    <li>
-                      Created inventory management system with barcode integration and automated reordering
-                    </li>
-                    <li>
-                      Designed sales ERP and accounting system with invoicing, expense tracking, and financial reporting
-                    </li>
-                    <li>
-                      <strong>Technologies:</strong> Laravel, CodeIgniter, PHP, MySQL, jQuery, JavaScript
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-                        
-            <div class="page-break-after"></div>
-
-            <article class="mb-8">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Web Developer</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <h4 class="text-job font-medium">Choukosh IT</h4>
-                  <p class="text-gray-600 mb-2">November 2011 - October 2015</p>
-                  <ul class="list-disc pl-5 space-y-2">
-                    <li>
-                      Developed inventory management systems for multiple retailers with real-time stock tracking
-                    </li>
-                    <li>
-                      Created enterprise sales and accounting management systems for small to medium businesses
-                    </li>
-                    <li>
-                      Built multi-vendor e-commerce platforms with integrated payment gateways and order management
-                    </li>
-                    <li>
-                      Designed and implemented responsive websites and content management systems for news publications
-                    </li>
-                    <li>
-                      <strong>Technologies:</strong> Laravel, CodeIgniter, PHP, MySQL, jQuery, CSS, Bootstrap, HTML
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Backend Development
+            </h3>
+            <p class="text-gray-800">
+              Node.js, Express.js, Nest.js, PHP, Laravel, CodeIgniter
+            </p>
           </div>
-        </section>
-        
-        <section class="mt-8">
-          <div class="w-full">
-            <h2 id="skills" class="text-heading font-semibold border-b-2 border-primary-light pb-1 mb-4">TECHNICAL SKILLS</h2>
-            
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Frontend Development</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    JavaScript, TypeScript, React.js, Next.js, Vue.js, Nuxt.js, Quasar, Redux, React Query, Pinia
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Backend Development</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    Node.js, Express.js, Nest.js, RESTful APIs, PHP, Laravel, CodeIgniter
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Database Systems</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    MongoDB, MySQL, PostgreSQL, DynamoDB, Firebase
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">DevOps & Cloud</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    Docker, CI/CD, Git, GitHub Actions, AWS (EC2, S3, SNS, CloudFront)
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">UI/UX Technologies</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    Tailwind CSS, Bootstrap, Material UI, HTML5, CSS3, SCSS, Responsive Design
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/4 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">Testing & Methodology</h3>
-                </div>
-                <div class="md:w-3/4">
-                  <p class="mb-1">
-                    Jest, Cypress, React Testing Library, Agile, Scrum, Jira, Asana, Trello
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              UI Frameworks & Styling
+            </h3>
+            <p class="text-gray-800">
+              Tailwind CSS, Bootstrap, Material UI, CSS3, HTML5
+            </p>
           </div>
-        </section>
-        
-        <div class="page-break-after"></div>
-        
-        <section class="mt-8">
-          <div class="w-full">
-            <h2 id="education" class="text-heading font-semibold border-b-2 border-primary-light pb-1 mb-4">EDUCATION</h2>
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-2/5 mb-3 md:mb-0">
-                  <h3 class="text-job font-semibold border-l-4 border-secondary-light pl-2">B.Sc. in Computer Science & Engineering</h3>
-                </div>
-                <div class="md:w-3/5">
-                  <h4 class="text-job font-medium">Bangladesh University of Business and Technology (BUBT)</h4>
-                </div>
-              </div>
-            </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Databases
+            </h3>
+            <p class="text-gray-800">MongoDB, MySQL, PostgreSQL, Firebase</p>
           </div>
-        </section>
-        
-        <section class="mt-8">
-          <div class="w-full">
-            <h2 id="references" class="text-heading font-semibold border-b-2 border-primary-light pb-1 mb-4">REFERENCES</h2>
-            <div class="mb-6">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-3 md:mb-0">
-                  <div class="border-l-4 border-secondary-light pl-3 py-1">
-                    <h3 class="text-job font-semibold">Leeladitya Kumar Dhali</h3>
-                    <ul class="space-y-1">
-                      <li>Engineering Manager</li>
-                      <li>Dotlines Bangladesh Ltd.</li>
-                      <li class="flex items-center">
-                        <img src="icons/phone-portrait-outline.svg" class="h-4 w-4 mr-2" alt="Phone" />
-                        <a href="tel:+8801715950961" class="hover:text-blue-600">+880 1715 950 961</a>
-                      </li>
-                      <li class="flex items-center">
-                        <img src="icons/mail-outline.svg" class="h-4 w-4 mr-2" alt="Email" />
-                        <a href="mailto:aditya.cse04@gmail.com" class="hover:text-blue-600">aditya.cse04@gmail.com</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="md:w-1/2">
-                  <div class="border-l-4 border-secondary-light pl-3 py-1">
-                    <h3 class="text-job font-semibold">Ismail Hossen</h3>
-                    <ul class="space-y-1">
-                      <li>Senior Software Engineer</li>
-                      <li>Cefalo Bangladesh Ltd.</li>
-                      <li class="flex items-center">
-                        <img src="icons/phone-portrait-outline.svg" class="h-4 w-4 mr-2" alt="Phone" />
-                        <a href="tel:+8801858256381" class="hover:text-blue-600">+880 1858 256 381</a>
-                      </li>
-                      <li class="flex items-center">
-                        <img src="icons/mail-outline.svg" class="h-4 w-4 mr-2" alt="Email" />
-                        <a href="mailto:engineerismail21@gmail.com" class="hover:text-blue-600">engineerismail21@gmail.com</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              DevOps & Version Control
+            </h3>
+            <p class="text-gray-800">
+              Docker, AWS, Git, GitHub, GitLab, Bitbucket, GitHub Actions
+            </p>
           </div>
-        </section>
-        
-      </main>
-      
-      <div class="mt-10">
-        <div class="w-full">
-          <div class="my-8">
-            <div class="md:w-1/2">
-              <div class="space-y-2">
-                <div class="h-10">&nbsp;</div>
-                <div><img src="signature.jpg" class="h-10 ml-16" alt="Signature" /></div>
-                <div>Name: <strong>Mohammad Lukman Hussain</strong></div>
-                <div>Date: <span id="date"></span></div>
-              </div>
-            </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Testing
+            </h3>
+            <p class="text-gray-800">
+              Jest, React Testing Library, Cypress, Frisby
+            </p>
+          </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Project Management
+            </h3>
+            <p class="text-gray-800">Agile, Scrum, Kanban, Asana, Trello</p>
+          </div>
+          <div class="mb-2">
+            <h3
+              class="font-bold text-gray-800 border-b border-gray-300 pb-1 mb-1"
+            >
+              Integrations
+            </h3>
+            <p class="text-gray-800">
+              PayPal, Stripe, Authorize.Net, SendGrid, Twilio, Social APIs
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Page Break -->
+      <div class="page-break-after"></div>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section class="mb-6">
+        <h2
+          class="text-xl font-bold text-white bg-gray-700 px-4 py-1 mb-3 tracking-wider"
+        >
+          PROFESSIONAL EXPERIENCE
+        </h2>
+
+        <!-- Job 1 -->
+        <div class="mb-5">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-1"
+          >
+            <h3 class="text-lg font-bold text-gray-800">
+              Staff Software Engineer
+            </h3>
+            <p class="text-gray-700 font-medium">March 2022 - Present</p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-2"
+          >
+            <p class="font-semibold text-gray-700">
+              Vivasoft Limited (bKash Team)
+            </p>
+            <p class="text-gray-600">Dhaka, Bangladesh</p>
+          </div>
+
+          <div class="mb-2">
+            <h4 class="text-gray-800 font-semibold">Key Responsibilities:</h4>
+            <ul class="list-disc pl-8 text-gray-700">
+              <li>
+                Lead frontend architecture design and implementation for
+                multiple enterprise applications
+              </li>
+              <li>
+                Manage DevOps operations with Docker for containerization and
+                deployment
+              </li>
+              <li>
+                Mentor junior developers and conduct code reviews for quality
+                assurance
+              </li>
+              <li>
+                Create and maintain development standards and best practices
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-gray-800 font-semibold">Key Projects:</h4>
+            <ul class="pl-8 space-y-4 mt-2">
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">bKash Merchant Portal</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> Multi-tier merchant onboarding
+                  (SME, Enterprise, Agent), financial reporting, automated
+                  settlements, transaction reconciliation, payment gateway
+                  integration, refund management, B2B/B2C2M payment channels,
+                  enterprise wallet management, webhooks, real-time
+                  notifications, and role-based access control.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> Vue.js, Quasar, Tailwind CSS,
+                  Node.js, Nest.js, PostgreSQL, DynamoDB
+                </p>
+              </li>
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">HINK Media Share</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> S3-backed high-resolution media
+                  storage with multiple resolution options, geolocation-based
+                  content search, social media integration, content/user
+                  moderation capabilities, and comprehensive notification
+                  system.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> React.js, Next.js, GoLang,
+                  MySQL, MongoDB
+                </p>
+              </li>
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">Applicant Tracking System</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> Automated job application workflow
+                  with multi-clan position management, AI-powered application
+                  filtering, candidate prioritization, application status
+                  control, and interview scheduling.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> Next.js, FastAPI, PostgreSQL,
+                  MongoDB
+                </p>
+              </li>
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">Toja Connected Water</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> User registration, IoT device
+                  management, Firebase-based water usage tracking, automated
+                  invoicing, donation platform, usage history visualization, and
+                  analytics dashboard.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> Next.js, FastAPI, PostgreSQL
+                </p>
+              </li>
+
+              <!-- Page Break -->
+              <div class="page-break-after"></div>
+
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">Progress Tracker</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> Workspace and team management, task
+                  creation and assignment, subtask hierarchy, milestone
+                  tracking, invitation system, performance analytics dashboard,
+                  and third-party integrations with Trello, Taskade, Jira, and
+                  Asana.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> Next.js, Node.js, MongoDB
+                </p>
+              </li>
+              <li class="border-l-2 border-gray-400 pl-4 py-1">
+                <div class="font-semibold">Visitors Management System</div>
+                <p class="mt-1">
+                  <strong>Features:</strong> Role-based user administration,
+                  permission management, photo-verified visitor registration,
+                  visitor movement tracking, and multi-branch facility support.
+                </p>
+                <p class="mt-1 italic text-gray-700">
+                  <strong>Technologies:</strong> Next.js, Node.js, MongoDB
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="mb-5">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-1"
+          >
+            <h3 class="text-lg font-bold text-gray-800">
+              Senior Software Engineer
+            </h3>
+            <p class="text-gray-700 font-medium">
+              November 2018 - January 2022
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-2"
+          >
+            <p class="font-semibold text-gray-700">
+              Technobd Web Solutions (Pvt.) Ltd.
+            </p>
+            <p class="text-gray-600">Dhaka, Bangladesh</p>
+          </div>
+
+          <ul class="pl-8 space-y-4 text-gray-700">
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Multi-Role Management System</div>
+              <p class="mt-1">
+                Developed a user management platform with hierarchical roles
+                (Admin, Master Affiliate, Certified Partner, End User, Livechat
+                Operator), granular permissions, and role-specific dashboards
+                with real-time analytics.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> React.js, CodeIgniter, MySQL,
+                Redux, Bootstrap, REST API
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Real-time Livechat Application</div>
+              <p class="mt-1">
+                Built a chat application featuring real-time messaging, typing
+                indicators, conversation history, file sharing, and presence
+                detection with tiered support levels and intelligent inquiry
+                routing.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> React.js, WebSockets, Node.js,
+                Redis, MongoDB
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">AI-Powered Communication System</div>
+              <p class="mt-1">
+                Designed and implemented an intelligent messaging system that
+                used AI to analyze incoming SMS/MMS content for keyword matching
+                and automatic response generation. Created a learning system
+                that improved response accuracy over time based on user
+                interactions.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Twilio API, Natural Language
+                Processing, Node.js, MongoDB
+              </p>
+            </li>
+
+            <!-- Page Break -->
+            <div class="page-break-after"></div>
+
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Sales Funnel and Tax Management</div>
+              <p class="mt-1">
+                Integrated ClickFunnels for advanced sales pipeline management
+                with automated tax calculation and reporting via TaxJar.
+                Implemented a comprehensive email marketing solution through
+                SendGrid to support the sales process with automated drip
+                campaigns and performance tracking.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> ClickFunnels API, TaxJar API,
+                SendGrid API, JavaScript, React.js
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="mb-5">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-1"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Senior Programmer</h3>
+            <p class="text-gray-700 font-medium">December 2015 - July 2018</p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-2"
+          >
+            <p class="font-semibold text-gray-700">WAN IT Ltd.</p>
+            <p class="text-gray-600">Dhaka, Bangladesh</p>
+          </div>
+
+          <ul class="pl-8 space-y-4 text-gray-700">
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">HRM System</div>
+              <p class="mt-1">
+                Developed a comprehensive Human Resource Management system with
+                employee onboarding, attendance tracking, leave management,
+                performance evaluation, and document management. Implemented
+                role-based access control with different permission levels for
+                HR managers and employees.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Laravel, MySQL, ReactJS,
+                Bootstrap, jQuery, REST API, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Payroll System</div>
+              <p class="mt-1">
+                Created an automated payroll processing system with salary
+                structure management, tax calculation, benefits administration,
+                and customizable salary slip generation. Integrated with the
+                attendance system to calculate salaries based on work hours and
+                leave records.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Laravel, MySQL, JavaScript,
+                Bootstrap, jQuery, AJAX, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Inventory Management System</div>
+              <p class="mt-1">
+                Built an inventory tracking solution with barcode scanning,
+                stock level monitoring, purchase order management, and automated
+                reordering. Implemented warehouse management features with
+                multiple location support and inventory movement tracking.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Laravel, MySQL, ReactJS,
+                Bootstrap, Chart.js, REST API, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">
+                Sales ERP and Account Management System
+              </div>
+              <p class="mt-1">
+                Developed an enterprise resource planning system with modules
+                for sales, procurement, invoicing, quotation management, and
+                financial accounting. Implemented a comprehensive reporting
+                system with customizable dashboards and real-time business
+                analytics.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Laravel, MySQL, JavaScript,
+                React.js, Bootstrap, Chart.js, PDF.js, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Multi Vendor E-commerce Platform</div>
+              <p class="mt-1">
+                Created an online marketplace supporting multiple vendors with
+                independent stores, commission management, product catalog
+                management, and integrated payment processing. Implemented
+                user-friendly dashboards for vendors to track sales and manage
+                inventory.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> Laravel, MySQL, JavaScript,
+                Bootstrap, jQuery, AJAX, HTML5, CSS3
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page Break -->
+        <div class="page-break-after"></div>
+
+        <!-- Job 4 -->
+        <div class="mb-5">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-1"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Web Developer</h3>
+            <p class="text-gray-700 font-medium">
+              November 2011 - October 2015
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-between items-start mb-2"
+          >
+            <p class="font-semibold text-gray-700">Choukosh IT</p>
+            <p class="text-gray-600">Dhaka, Bangladesh</p>
+          </div>
+
+          <ul class="pl-8 space-y-4 text-gray-700">
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Inventory Management System</div>
+              <p class="mt-1">
+                Developed a comprehensive inventory control system for retail
+                and wholesale businesses with features for stock management,
+                purchase ordering, and inventory valuation. Implemented barcode
+                integration and inventory alerts for low stock items to
+                streamline warehouse operations.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> CodeIgniter, Laravel, MySQL,
+                JavaScript, jQuery, Bootstrap, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">
+                Sales ERP and Account Management System
+              </div>
+              <p class="mt-1">
+                Built an integrated sales and accounting platform with modules
+                for customer relationship management, sales tracking, invoice
+                generation, and financial reporting. Implemented multi-currency
+                support and tax calculation features to handle international
+                transactions.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> CodeIgniter, Laravel, MySQL,
+                JavaScript, jQuery, Bootstrap, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Multi Vendor E-commerce Platform</div>
+              <p class="mt-1">
+                Created a scalable online marketplace allowing multiple sellers
+                to list products, manage inventory, and process orders through a
+                unified platform. Implemented features for product
+                categorization, search functionality, and secure payment
+                processing.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> CodeIgniter, Laravel, MySQL,
+                JavaScript, jQuery, Bootstrap, HTML5, CSS3
+              </p>
+            </li>
+            <li class="border-l-2 border-gray-400 pl-4 py-1">
+              <div class="font-semibold">Website and Online News Portal</div>
+              <p class="mt-1">
+                Designed and developed responsive corporate websites and dynamic
+                news portals with content management systems. Implemented
+                features for article publishing, media management, user
+                commenting, and social media integration.
+              </p>
+              <p class="mt-1 italic text-gray-700">
+                <strong>Technologies:</strong> CodeIgniter, Laravel, MySQL,
+                JavaScript, jQuery, Bootstrap, HTML5, CSS3
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Page Break -->
+      <div class="page-break-after"></div>
+
+      <!-- EDUCATION -->
+      <section class="mb-6">
+        <h2
+          class="text-xl font-bold text-white bg-gray-700 px-4 py-1 mb-3 tracking-wider"
+        >
+          EDUCATION
+        </h2>
+
+        <div class="mb-3">
+          <div class="mb-1">
+            <h3 class="font-bold text-gray-800">
+              B.Sc. in Computer Science & Engineering
+            </h3>
+          </div>
+          <p class="text-gray-700">
+            Bangladesh University of Business and Technology (BUBT)
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <div class="mb-1">
+            <h3 class="font-bold text-gray-800">
+              Diploma in Computer Engineering
+            </h3>
+          </div>
+          <p class="text-gray-700">Habiganj Polytechnic Institute (HPI)</p>
+        </div>
+      </section>
+
+      <!-- REFERENCES -->
+      <section class="mb-6">
+        <h2
+          class="text-xl font-bold text-white bg-gray-700 px-4 py-1 mb-3 tracking-wider"
+        >
+          REFERENCES
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="border border-gray-300 rounded p-4 bg-gray-50">
+            <ul class="text-gray-700 space-y-1">
+              <li class="font-bold text-gray-800">Leeladitya Kumar Dhali</li>
+              <li>Dotlines Bangladesh Ltd.</li>
+              <li>Engineering Manager</li>
+              <li class="flex items-center">
+                <img
+                  src="icons/phone-portrait-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Phone"
+                />
+                +880 1715 950 961
+              </li>
+              <li class="flex items-center">
+                <img
+                  src="icons/mail-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Email"
+                />
+                aditya.cse04@gmail.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="border border-gray-300 rounded p-4 bg-gray-50">
+            <ul class="text-gray-700 space-y-1">
+              <li class="font-bold text-gray-800">Ismail Hossen</li>
+              <li>Cefalo Bangladesh Ltd.</li>
+              <li>Senior Software Engineer</li>
+              <li class="flex items-center">
+                <img
+                  src="icons/phone-portrait-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Phone"
+                />
+                +880 1858 256 381
+              </li>
+              <li class="flex items-center">
+                <img
+                  src="icons/mail-outline.svg"
+                  class="h-4 w-4 mr-2"
+                  alt="Email"
+                />
+                engineerismail21@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-8 pt-4 border-t border-gray-300 text-right">
+        <div class="flex justify-end">
+          <div class="w-64 text-center">
+            <img
+              src="signature.jpg"
+              class="h-10 mx-auto mb-2"
+              alt="Signature"
+            />
+            <p class="font-semibold">Mohammad Lukman Hussain</p>
+            <p>Date: <span id="date"></span></p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script type="text/javascript">
-      var today = new Date()
-        .toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "numeric",
-          year: "numeric",
-        })
-        .split(" ")
-        .join("/");
+      var today = new Date().toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      });
 
       document.getElementById("date").innerHTML = today;
     </script>
